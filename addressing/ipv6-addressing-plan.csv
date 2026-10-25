@@ -1,0 +1,16 @@
+index,isp1_prefix,isp2_prefix,purpose,isp1_hosts,isp2_hosts
+1,20AD:1000:1000:1000::/52,30AD:1000:1000:1000::/52,Birmingham ↔ ISP link,Birmingham Fa0/1 ::2 / ISP 1 Fa0/1 ::1,Birmingham Fa1/0 ::2 / ISP 2 Fa1/0 ::1
+2,20AD:1000:1000:2000::/52,30AD:1000:1000:2000::/52,Edinburgh ↔ ISP link,Edinburgh Fa1/0 ::2 / ISP 1 Fa1/0 ::1,Edinburgh Fa0/1 ::2 / ISP 2 Fa0/1 ::1
+3,20AD:1000:1000:3000::/52,30AD:1000:1000:3000::/52,Manchester ↔ ISP link,Manchester Fa1/1 ::2 / ISP 1 Fa1/1 ::1,Manchester ::2 / ISP 2 Fa1/1 ::1
+4,20AD:1000:1000:4000::/52,30AD:1000:1000:4000::/52,ISP ↔ London Edge,ISP 1 Fa0/0 ::1 / London Edge Fa0/0 ::2,ISP 2 Fa0/0 ::1 / London Edge Fa1/1 ::2
+5,20AD:1000:1000:5000::/52,30AD:1000:1000:5000::/52,London Edge ↔ London DMZ,Edge Fa0/1 ::1 / DMZ Fa0/1 ::2,Edge Fa0/1 ::1 / DMZ Fa0/1 ::2
+6,20AD:1000:1000:6000::/52,30AD:1000:1000:6000::/52,London DMZ: email server (VLAN 100),Gateway ::1 · Email server ::100,Gateway ::1 · Email server ::100
+7,20AD:1000:1000:7000::/52,30AD:1000:1000:7000::/52,London DMZ: financial floor (VLAN 200),Gateway ::1 · Financial team server ::200 · Sub-file server ::203,same host IDs
+8,20AD:1000:1000:8000::/52,30AD:1000:1000:8000::/52,London Edge ↔ London Internal,Edge Fa1/0 ::1 / Internal Fa1/0 ::2,Edge Fa1/0 ::1 / Internal Fa1/0 ::2
+9,20AD:1000:1000:9000::/52,30AD:1000:1000:9000::/52,Manchester internal LAN,Gateway ::1 · Manchester PC ::100,same host IDs
+10,20AD:1000:1000:A000::/52,30AD:1000:1000:A000::/52,Birmingham internal LAN,Gateway ::1 · Birmingham PC ::100,same host IDs
+11,20AD:1000:1000:B000::/52,30AD:1000:1000:B000::/52,Edinburgh internal LAN,Gateway ::1 · Edinburgh PC ::100,same host IDs
+12,20AD:1000:1000:C000::/52,30AD:1000:1000:C000::/52,London Internal: web server (VLAN 201),Gateway ::1 · Web server ::201,same host IDs
+13,20AD:1000:1000:D000::/52,30AD:1000:1000:D000::/52,London Internal: employees (VLAN 202),Gateway ::1 · Employee PC1 ::202 · Employee PC2 ::204,same host IDs
+14,20AD:1000:1000:E000::/52,30AD:1000:1000:E000::/52,FG3 (reserved in plan),not assigned in report,not assigned in report
+15,20AD:1000:1000:F000::/52,30AD:1000:1000:F000::/52,Manchester Wi-Fi service,Manchester ::2 · Wi-Fi (config side) ::100,same host IDs
